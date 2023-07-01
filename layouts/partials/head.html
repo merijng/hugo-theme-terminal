@@ -11,6 +11,15 @@
 {{ end }}
 <link rel="canonical" href="{{ .Permalink }}" />
 
+{{- if .IsTranslated -}}
+  {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+  {{- end -}}
+  {{ range first 1 .AllTranslations }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+  {{- end -}}
+{{ end }}
+
 {{ template "_internal/google_analytics.html" . }}
 
 {{ $defaultStyles := resources.Get "css/style.scss" }}
