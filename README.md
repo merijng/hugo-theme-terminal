@@ -1,11 +1,4 @@
 # Terminal
-
-## The theme is no longer maintained, but can still be used
-
-Even if the repository is archived you can still use the theme, fork it, download it, expand it, etc. Remember that each Hugo theme is a module that can be modified to match your needs. The theme is fully "open" and it depends only on the internal engines implemented in Hugo.
-
-The theme brings many useful features thanks to [all people that contributed to it](https://github.com/panr/hugo-theme-terminal/graphs/contributors) (I want to thank you all!). At the time of archiving the theme has reached 9th place on the [official Hugo Themes list](https://themes.gohugo.io/). This is huge! Thanks to you!
-
 ----
 
 ![Terminal](https://github.com/panr/hugo-theme-terminal/blob/master/images/screenshot.png?raw=true)
@@ -91,7 +84,7 @@ A custom syntax highlighting based on PrismJS. All you need to do is to wrap you
 
 ## How to start
 
-You can download the theme manually by going to [https://github.com/panr/hugo-theme-terminal.git](https://github.com/panr/hugo-theme-terminal.git) and pasting it to `themes/terminal` in your root directory.
+You can download the theme manually by going to [[https://github.com/panr/hugo-theme-terminal.git](https://github.com/panr/hugo-theme-terminal.git)](https://github.com/merijng/hugo-theme-terminal.git) and pasting it to `themes/terminal` in your root directory.
 
 You can also choose **one of the 3 possibilities** to install the theme:
 
@@ -101,33 +94,10 @@ You can also choose **one of the 3 possibilities** to install the theme:
 
 ⚠️ The theme needs at least Hugo **Extended** v0.90.x.
 
-### Install theme as Hugo Module
-
-```bash
-# If this is the first time you're using Hugo Modules
-# in your project. You have to initiate your own module before
-# you fetch the theme module.
-#
-# hugo mod init [your website/module name]
-hugo mod get github.com/panr/hugo-theme-terminal/v3
-```
-
-and in your config file add:
-
-```toml
-[module]
-  # this is needed when you fetch the theme as a submodule to your repo.
-  # replacements = "github.com/panr/hugo-theme-terminal -> themes/terminal"
-[[module.imports]]
-  path = 'github.com/panr/hugo-theme-terminal/v3'
-```
-
-Keep in mind that the theme by default won't show up in the `themes` directory. This means that you are using the theme as it was on the repository at the moment you fetched it. Your local `go.sum` file keeps all the references. Read more about Hugo Modules in the [official documentation](https://gohugo.io/hugo-modules/).
-
 ### Install theme locally
 
 ```bash
-git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal
+git clone https://github.com/merijng/hugo-theme-terminal.git themes/terminal
 ```
 
 This will clone the repository directly to the `themes/terminal` directory.
@@ -135,7 +105,7 @@ This will clone the repository directly to the `themes/terminal` directory.
 ### Install theme as a submodule
 
 ```bash
-git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal
+git submodule add -f https://github.com/merijng/hugo-theme-terminal.git themes/terminal
 ```
 
 This will install the repository as a sumbodule in the `themes/terminal` directory.
